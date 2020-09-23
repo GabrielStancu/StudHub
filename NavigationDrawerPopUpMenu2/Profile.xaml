@@ -1,0 +1,181 @@
+﻿<Page x:Class="NavigationDrawerPopUpMenu2.Profile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="908" d:DesignWidth="1722"
+      Title="Profile">
+
+    <Grid Background="#FFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="610*"/>
+            <ColumnDefinition Width="251*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#414141" HorizontalAlignment="Right" Width="500" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="86*"/>
+                <RowDefinition Height="89*"/>
+                <RowDefinition Height="126*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row ="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="157*"/>
+                    <ColumnDefinition Width="93*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1">
+                    <Image Source="/Img_source/boy.png" Name="ProfilePicture" Width="176" HorizontalAlignment="Left" Margin="0,53"/>
+
+                </StackPanel>
+                <StackPanel Grid.Column="0" >
+                    <TextBlock x:Name="UserName" Text="Gherghel Andrei" Foreground="White" FontSize="34" Height="48" Margin="0,90,0,0" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="Email" Text="andrei1430@gmail.com" Foreground="White" FontSize="22" Height="48" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="314" Height="74">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture" Width="25" HorizontalAlignment="Left" Margin="50,10,10,0" Height="25" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="BadgeName" Text="Novice sportiv" FontSize="28" HorizontalAlignment="Left" Foreground="White" Width="268"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Separator Foreground="White" Margin="10,0,10,157" Height="154" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            </Separator>
+            <Grid Grid.Row="1" Margin="0,0,0,354" Grid.RowSpan="2" >
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,60,0,0">
+                        <materialDesign:PackIcon Kind="School" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="25" Margin="40,8,10,0" Foreground="#FF6100"/>
+                        <TextBlock x:Name="UniversityName" TextWrapping ="Wrap" Text="Facultatea de Automatica si Calculatoare" FontSize="28" HorizontalAlignment="Left" Foreground="White" Height="94" Width="400"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                        <materialDesign:PackIcon Kind="Star" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="25" Margin="40,8,10,0" Foreground="#FF6100"/>
+                        <TextBlock x:Name="Rating" Text ="7.8/10" FontSize="28" HorizontalAlignment="Left" Foreground="White" Height="50" Width="400"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <materialDesign:PackIcon Kind="EqualBox" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" Width="25" Margin="40,8,10,0" Foreground="#FF6100"/>
+                        <TextBlock x:Name="AttendedEventsNumber" Text ="46" FontSize="28" HorizontalAlignment="Left" Foreground="White" Height="50" Width="400"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Separator Foreground="White" Margin="10,-233,10,157" Height="454" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5"/>
+                <StackPanel>
+                    <TextBlock Text="Badge-uri" FontSize="40" Foreground="White" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture1" Width="30" HorizontalAlignment="Left" Margin="90,10,0,10"/>
+                        <TextBlock x:Name="BadgeName1" Text="BadgeName1" Foreground="White" FontSize="28" Margin="10,5,0,0" Width="290"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture2" Width="30" HorizontalAlignment="Left" Margin="90,10,0,10"/>
+                        <TextBlock x:Name="BadgeName2" Text="BadgeName2" Foreground="White" FontSize="28" Margin="10,5,0,0" Width="290"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture3" Width="30" HorizontalAlignment="Left" Margin="90,10,0,10"/>
+                        <TextBlock x:Name="BadgeName3" Text="BadgeName3" Width="290" Foreground="White" FontSize="28" Margin="10,5,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture4" Width="30" HorizontalAlignment="Left" Margin="90,10,0,10"/>
+                        <TextBlock x:Name="BadgeName4" Text="BadgeName4" Width="290" Foreground="White" FontSize="28" Margin="10,5,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Img_source/boy.png" Name="BadgePicture5" Width="30" HorizontalAlignment="Left" Margin="90,10,0,10"/>
+                        <TextBlock x:Name="BadgeName5" Text="BadgeName5" Width="290" Foreground="White" FontSize="28" Margin="10,5,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="115*"/>
+
+            </Grid.RowDefinitions>
+            <Image Source="Img_source/Graph1.png" Margin="-54,10,653,560" Grid.RowSpan="2"></Image>
+            <Image Source="Img_source/Graph2.png" Margin="567,7,10,548" Grid.RowSpan="2"/>
+            <TextBlock FontWeight="DemiBold" Grid.Row="1" Text="Evenimentele la care ai participat" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,261,195,483" Width="829" Height="65"/>
+            <Separator Margin="36,283,38,432" Grid.Row="1"></Separator>
+            <Grid Background="#FFF" Margin="86,338,330,264" Grid.Row="1">
+                <Canvas Name="CanvasEvents" Height="225" Width="225">
+                    <Border Background="#616161" BorderBrush="#ff6100" BorderThickness="2" CornerRadius="20, 20, 20, 20" Height="205" Canvas.Left="-287" Canvas.Top="10" Width="797">
+                        <Grid Name="GridEventsInsideBorder">
+                            <Canvas Name="SampleEvent" Background="#616161" VerticalAlignment="Top" Margin="10,10,10,0" Height="185">
+                                <Image Name="UserBadge" Source="Img_source/tesla.png" Width="35" Height="35" Margin="5, 10, 0 ,0"></Image>
+                                <Image Name="UserPicture" Source="Img_source/boy.png" Width="50" Height="50" Margin="40, 5, 0, 0"></Image>
+                                <TextBlock Name="EventTitle" Text="Would you like to party??" Foreground="#FFF" FontSize="30" Margin="110, 10, 0,0"></TextBlock>
+                                <StackPanel Height="30" Width="30" Margin="600, 23, 0, 0">
+                                    <materialDesign:PackIcon Kind="Clock" Foreground="#FFF" Height="30" Width="30"></materialDesign:PackIcon>
+                                </StackPanel>
+                                <Label Name="txtStartingDate" Content="StartingDate" Foreground="#FFF" FontSize="16" Margin="640, 10, 0, 0">
+
+                                </Label>
+                                <Label Name="txtStartingHour" Content="StartingHour" Foreground="#FFF" FontSize="16" Margin="640, 30, 0, 0">
+
+                                </Label>
+                                <StackPanel Height="30" Width="30" Margin="600, 70, 0, 0">
+                                    <materialDesign:PackIcon Kind="Pin" Foreground="#FFF" HorizontalAlignment="Center" Height="25" Width="25"></materialDesign:PackIcon>
+                                </StackPanel>
+                                <Label Name="txtLocation" Content="Locations" Foreground="#FFF" FontSize="16" Margin="640, 65, 0, 0">
+
+                                </Label>
+                                <Label Name="Description" Foreground="#FFF" FontSize="16" Content="Description" Canvas.Top="60" Height="77" Width="575" Canvas.Left="5"></Label>
+                                <Label Name="Participants" Height="33" Width="575" Canvas.Top="142" Canvas.Left="5">
+                                    <Image Name="Participant" Source="Img_source/girl.png" ></Image>
+                                </Label>
+                                <Button x:Name="Button1" Foreground="#ff6100" Background="#D8D8D8" BorderBrush="{x:Null}" Height="50" Width="131" Canvas.Left="635" Canvas.Top="125">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="198">
+                                        <materialDesign:PackIcon Name="IconLogo" Kind="Plus" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="25"/>
+                                        <TextBlock  Text ="Rate" Name="txtBtn1" VerticalAlignment="Center" Margin="20 10"/>
+                                    </StackPanel>
+                                </Button>
+                            </Canvas>
+                        </Grid>
+                    </Border>
+                </Canvas>
+            </Grid>
+
+            <Grid Background="#FFF" Margin="86,550,330,52" Grid.Row="1">
+                <Canvas Name="CanvasEvents2" Height="225" Width="225">
+                    <Border Background="#616161" BorderBrush="#ff6100" BorderThickness="2" CornerRadius="20, 20, 20, 20" Height="205" Canvas.Left="-287" Canvas.Top="10" Width="797">
+                        <Grid Name="GridEventsInsideBorder2">
+                            <Canvas Name="SampleEvent2" Background="#616161" VerticalAlignment="Top" Margin="10,10,10,0" Height="185">
+                                <Image Name="UserBadge2" Source="Img_source/tesla.png" Width="35" Height="35" Margin="5, 10, 0 ,0"></Image>
+                                <Image Name="UserPicture2" Source="Img_source/boy.png" Width="50" Height="50" Margin="40, 5, 0, 0"></Image>
+                                <TextBlock Name="EventTitle2" Text="Would you like to party??" Foreground="#FFF" FontSize="30" Margin="110, 10, 0,0"></TextBlock>
+                                <StackPanel Height="30" Width="30" Margin="600, 23, 0, 0">
+                                    <materialDesign:PackIcon Kind="Clock" Foreground="#FFF" Height="30" Width="30"></materialDesign:PackIcon>
+                                </StackPanel>
+                                <Label Name="txtStartingDate2" Content="StartingDate" Foreground="#FFF" FontSize="16" Margin="640, 10, 0, 0">
+
+                                </Label>
+                                <Label Name="txtStartingHour2" Content="StartingHour" Foreground="#FFF" FontSize="16" Margin="640, 30, 0, 0">
+
+                                </Label>
+                                <StackPanel Height="30" Width="30" Margin="600, 70, 0, 0">
+                                    <materialDesign:PackIcon Kind="Pin" Foreground="#FFF" HorizontalAlignment="Center" Height="25" Width="25"></materialDesign:PackIcon>
+                                </StackPanel>
+                                <Label Name="txtLocation2" Content="Locations" Foreground="#FFF" FontSize="16" Margin="640, 65, 0, 0">
+
+                                </Label>
+                                <Label Name="Description2" Foreground="#FFF" FontSize="16" Content="Description" Canvas.Top="60" Height="77" Width="575" Canvas.Left="5"></Label>
+                                <Label Name="Participants2" Height="33" Width="575" Canvas.Top="142" Canvas.Left="5">
+                                    <Image Name="Participant2" Source="Img_source/girl.png" ></Image>
+                                </Label>
+                                <Button x:Name="Button12" Foreground="#ff6100" Background="#D8D8D8" BorderBrush="{x:Null}" Height="50" Width="131" Canvas.Left="635" Canvas.Top="125">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="198">
+                                        <materialDesign:PackIcon Name="IconLogo2" Kind="Plus" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Width="25"/>
+                                        <TextBlock  Text ="Rate" Name="txtBtn12" VerticalAlignment="Center" Margin="20 10"/>
+                                    </StackPanel>
+                                </Button>
+                            </Canvas>
+                        </Grid>
+                    </Border>
+                </Canvas>
+            </Grid>
+
+
+        </Grid>
+        <Grid Grid.Column="1" Name="AttendedEvents">
+
+        </Grid>
+    </Grid>
+</Page>

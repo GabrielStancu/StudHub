@@ -1,0 +1,92 @@
+﻿<Window x:Class="NavigationDrawerPopUpMenu2.SignIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="1008" Width="1792" Foreground="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded" Closed="Window_Closed">
+
+    <Border BorderThickness="3" materialDesign:ColorZoneAssist.Mode="Dark" BorderBrush="Black">
+        <Grid Height="1008" VerticalAlignment="Bottom" RenderTransformOrigin="0.907,0.233">
+            <Grid.Background>
+                <ImageBrush ImageSource="Img_source/orange_background.jpg" Stretch="Fill"/>
+            </Grid.Background>
+            <Grid Height="30" VerticalAlignment="Top" Background="#000000">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#000000"/>
+                </Grid.Effect>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">BreakPoint</TextBlock>
+                <Button x:Name="Close" Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF31577E" Click="Close_Click">
+                    <materialDesign:PackIcon Kind="Close" Width="25" Height="25"/>
+                </Button>
+                <Button x:Name="Minimize" Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF31577E" Click="Minimize_Click" Margin="0,0,30,0">
+                    <materialDesign:PackIcon Kind="Minus" Width="25" Height="25"/>
+                </Button>
+            </Grid>
+            <Grid  VerticalAlignment="Bottom"  Height="640">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1059*"/>
+                    <ColumnDefinition Width="727*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#000000"/>
+                </Grid.Effect>
+                <Border BorderThickness="5" CornerRadius="8" Margin="690, -40, 690, 220" Background="#000000" Opacity="0.3" Grid.ColumnSpan="2"/>
+
+                <StackPanel Margin="600, 0, 600, 20" Grid.ColumnSpan="2">
+                    <Image Source="Img_source/login_logo21.png" Height="150" Width="150"/>
+                    <Border Background="#FFFFFF" Margin="150, 20, 150, 15" Height="40" CornerRadius="8">
+                        <Grid>
+                            <materialDesign:PackIcon Kind="Account" Height="30" Width="30" VerticalAlignment="Center" Margin="10, 0, 0, 0" Background="#000000"/>
+                            <TextBox Name="txtLogUserName" FontSize="24"  Margin="45, 0, 10, 0" BorderThickness="0" Foreground="Black"/>
+                        </Grid>
+                    </Border>
+
+                    <Border Background="#FFFFFF" Margin="150, 0, 150, 0" Height="40" CornerRadius="8">
+
+                        <Grid>
+                            <materialDesign:PackIcon Kind="KeyVariant" Height="30" Width="30" VerticalAlignment="Center" Margin="10, 0, 0, 0" Background="#000000"/>
+                            <PasswordBox Name="txtLogPassword" FontSize="24" Margin="45, 0, 10, 0" BorderThickness="0" Foreground="Black"/>
+                        </Grid>
+
+                    </Border>
+                    <StackPanel Margin="150,15,150,0">
+                        <Button Click="Button_Click_1" >
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border CornerRadius="8" Background="#FFAEAEAE">
+                                        <TextBlock Text="LOGIN" Foreground="White" 
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       FontSize="25"></TextBlock>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <Grid Margin="750,320,23,280">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="273*"/>
+                        <ColumnDefinition Width="113*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="23*"/>
+                        <RowDefinition Height="17*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="lblSignUp" Text="Sign Up" HorizontalAlignment="Left" FontSize="22" Foreground="#FFFFFF" MouseLeftButtonDown="LblSignUp_MouseLeftButtonDown" Grid.RowSpan="2" Margin="0,0,0,0">
+
+                    </TextBlock>
+                    <TextBlock Name="lblForgotPassword" Text="Forgot Password?" HorizontalAlignment="Right" FontSize="22" Foreground="#FFFFFF" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+                    </TextBlock>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

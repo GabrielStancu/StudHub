@@ -1,0 +1,72 @@
+﻿<Page x:Class="NavigationDrawerPopUpMenu2.Account"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NavigationDrawerPopUpMenu2"
+      mc:Ignorable="d" 
+       d:DesignHeight="908" d:DesignWidth="1722"
+      Title="Account">
+
+    <Grid Background="#FFFFFF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Height="150" Margin="0,-760,0,0" Grid.Column="0" Grid.ColumnSpan="6" Background="#BCBEC0"/>
+
+        <Grid Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,0,0">
+            <TextBlock Text="Choose the subscription method" FontSize="20" FontWeight="DemiBold" Margin="270,40,240,835"/>
+            <Button Width="110" Height="40"  Margin="-160,-700,0,0" Background="DarkOrange" Content="Student" FontSize="20" Click="Button_Click"/>
+            <Button Width="150" Height="40" Margin="120,-700,0,0" Background="DarkOrange" Content="Non-Student" FontSize="20" Click="Button_Click_1"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Height="420" Width="300" Margin="0,200,0,200">
+            <Border Background="#FFFFFF" CornerRadius="5" BorderThickness="10" BorderBrush="DarkGray"/>
+            <TextBlock Text="1 month" FontSize="40" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,20,0,350"/>
+            <Separator Margin="25,80,25,330"/>
+            <TextBlock Name="T1" Text="12.95$" FontSize="70" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,120,0,200"/>
+            <Button Width="250" Height="70" Margin="0,100,0,0" Background="DarkOrange" Content="Select" FontSize="35"/>
+            <TextBlock Name ="P1" Text="$ 12.95 charged" FontSize="20" HorizontalAlignment='Center' Margin="0,330,0,0" FontWeight="Bold"/>
+            <TextBlock Text="every month" FontSize="20" HorizontalAlignment='Center' Margin="0,355,0,0" FontWeight="Bold"/>
+            <Image Source="/Img_source/info_icon.png" Height="30" Width="30" HorizontalAlignment="Right" Margin="0,360,15,0"/>
+        </Grid>
+        <Grid Grid.Column="2" Height="470" Width="300" Margin="0,150,0,200">
+            <Border Background="#FFFFFF" CornerRadius="5" BorderThickness="10" BorderBrush="DarkOrange"/>
+            <TextBlock Text="best option" FontSize="30" FontWeight="DemiBold" Foreground="Black" HorizontalAlignment="Center" Margin="0,20,0,410"/>
+            <TextBlock Text="3 months" FontSize="40" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,60,0,350"/>
+            <Separator Margin="25,130,25,330"/>
+            <TextBlock Name="T3" Text="8.95$" FontSize="70" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,170,0,200"/>
+            <Button Width="250" Height="70" Margin="0,150,0,0" Background="DarkOrange" Content="Select" FontSize="35"/>
+            <TextBlock Name="P3" Text="$ 26.85 charged" FontSize="20" HorizontalAlignment='Center' Margin="0,380,0,0" FontWeight="Bold"/>
+            <TextBlock Text="every 3 months" FontSize="20" HorizontalAlignment='Center' Margin="0,405,0,0" FontWeight="Bold"/>
+            <Image Source="/Img_source/info_icon.png" Height="30" Width="30" HorizontalAlignment="Right" Margin="0,410,15,0"/>
+        </Grid>
+        <Grid Grid.Column="3" Height="420" Width="300" Margin="0,200,0,200">
+            <Border  Background="#FFFFFF" CornerRadius="5" BorderThickness="10" BorderBrush="DarkGray"/>
+            <TextBlock Text="6 months" FontSize="40" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,20,0,350"/>
+            <Separator Margin="25,80,25,330"/>
+            <TextBlock Name="T6" Text="7.45$" FontSize="70" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,120,0,200"/>
+            <Button Width="250" Height="70" Margin="0,100,0,0" Background="DarkOrange" Content="Select" FontSize="35"/>
+            <TextBlock Name ="P6" Text="$ 44.70 charged" FontSize="20" HorizontalAlignment='Center' Margin="0,330,0,0" FontWeight="Bold"/>
+            <TextBlock Text="every 6 months" FontSize="20" HorizontalAlignment='Center' Margin="0,355,0,0" FontWeight="Bold"/>
+            <Image Source="/Img_source/info_icon.png" Height="30" Width="30" HorizontalAlignment="Right" Margin="0,360,15,0"/>
+        </Grid>
+        <Grid Grid.Column="4" Height="420" Width="300" Margin="0,200,0,200">
+            <Border Background="#FFFFFF" CornerRadius="5" BorderThickness="10" BorderBrush="DarkGray"/>
+            <TextBlock Text="12 months" FontSize="40" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,20,0,350"/>
+            <Separator Margin="25,80,25,330"/>
+            <TextBlock Name ="T12" Text="6.95$" FontSize="70" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,120,0,200"/>
+            <Button Width="250" Height="70" Margin="0,100,0,0" Background="DarkOrange" Content="Select" FontSize="35"/>
+            <TextBlock Name="P12" Text="$ 83.40 charged" FontSize="20" HorizontalAlignment='Center' Margin="0,330,0,0" FontWeight="Bold"/>
+            <TextBlock Text="every 12 months" FontSize="20" HorizontalAlignment='Center' Margin="0,355,0,0" FontWeight="Bold"/>
+            <Image Source="/Img_source/info_icon.png" Height="30" Width="30" HorizontalAlignment="Right" Margin="0,360,15,0"/>
+        </Grid>
+        <TextBlock Text="30-day money-back guarantee!" HorizontalAlignment="Center" Grid.Column="2" Grid.ColumnSpan="2" FontSize="20" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,820,0,0"/>
+    </Grid>
+</Page>
